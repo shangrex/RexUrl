@@ -1,20 +1,25 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config()
-console.log(process.env.storage)
 // Option 3: Passing parameters separately (other dialects)
 // const sequelize = new Sequelize('db_rexurl', 't', 't', {
 //   host: 'localhost',
 //   dialect:'sqlite'
 // });
 
-console.log(process.env.dialect)
 
 // connect to database
-const sequelize = new Sequelize({
-  dialect: process.env.dialect,
-  storage: process.env.storage
-});
+// sqlite
+// const sequelize = new Sequelize({
+//   dialect: process.env.dialect,
+//   storage: process.env.storage
+// });
 
+// mysql
+const sequelize = new Sequelize('db_rexurl', 'root', 'pwd', {
+  host: process.env.db_url,
+  dialect: process.env.dialect,
+  port: process.env.db_port
+});
 
 sequelize.authenticate().then(()=>{
     console.log('Connection has been established successfully.');
