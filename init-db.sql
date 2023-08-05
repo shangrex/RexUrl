@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS db_rexurl;
+
+CREATE TABLE IF NOT EXISTS Urls(id INT, true_url TEXT ,short_url TEXT);
