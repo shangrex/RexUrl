@@ -13,3 +13,5 @@ open db_rexurl.db
 ```
 npm run watch
 ```
+
+## Setup MySQL version

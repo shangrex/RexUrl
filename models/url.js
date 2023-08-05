@@ -1,8 +1,6 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('./db')
 
-
-
 // define the database schema
 const Url = sequelize.define('Url', {
   // Model attributes are defined here

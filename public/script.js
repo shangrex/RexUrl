@@ -1,4 +1,5 @@
 // home page ajax response
+const crypto = require('crypto');
 
 $('#btn_submit').click(
     ()=>{
