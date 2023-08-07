@@ -16,16 +16,8 @@ open db_rexurl.db
 npm run watch
 ```
 
-## Setup MySQL version
-1. install package
-```
-npm install
-```
-2. pull the MySQL image
-```
-docker pull mysql
-```
-
 
 ## Docker Compose
-
+```
+docker compose up
+```
