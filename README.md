@@ -1,5 +1,5 @@
 # RexUrl
-A URL shorten web applications by uring MySQL database and sequelize ORM.
+A URL shorten web applications by using Express.js, MySQL and sequelize ORM.
 
 ## Setup SQLite version
 1. install sqlite3
